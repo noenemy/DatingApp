@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from 'constants';
 import { AuthService } from '../_services/auth.service';
 
 @Component({
