@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using Microsoft.AspNetCore.Http;
 using DatingApp.API.Helpers;
+using AutoMapper;
 
 namespace DatingApp.API
 {
@@ -40,6 +41,7 @@ namespace DatingApp.API
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
             services.AddCors();
+            services.AddAutoMapper();
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
